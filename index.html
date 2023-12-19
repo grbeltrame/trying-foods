@@ -9,16 +9,57 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
+
     <title>O que estou experimentando</title>
   </head>
   <body class="p-3 mb-2 bg-dark text-white">
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-white" style="align-items: center">
       <h2>Comidas que estou experimentando</h2>
+
+      <div class="container">
+        <h3>Régua de Avaliação</h3>
+        <div class="rating-container d-flex justify-content-center">
+          <div class="rating-item">
+            <img
+              src="images\image_dislike.svg"
+              alt="Muito Ruim"
+              class="rating-img"
+            />
+            <span>1-2</span>
+          </div>
+
+          <div class="rating-item">
+            <img src="images\image_sad.svg" alt="Ruim" class="rating-img" />
+            <span>3-4</span>
+          </div>
+
+          <div class="rating-item">
+            <img src="images\image_indif.svg" alt="Médio" class="rating-img" />
+            <span>5-6</span>
+          </div>
+
+          <div class="rating-item">
+            <img src="images\image_like.svg" alt="Bom" class="rating-img" />
+            <span>7-8</span>
+          </div>
+
+          <div class="rating-item">
+            <img
+              src="images\image_superlike.svg"
+              alt="Muito Bom"
+              class="rating-img"
+            />
+            <span>9-10</span>
+          </div>
+        </div>
+      </div>
 
       <table
         class="table table-dark table-striped"
         style="text-align: center"
         border="1"
+        id="tabela-comidas"
       >
         <thead>
           <th>COMIDA</th>
@@ -80,6 +121,99 @@
           </tr>
         </tbody>
       </table>
+
+      <!-- <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#adicionarModal"
+      >
+        Adicionar Nova Comida
+      </button> -->
+
+      <!-- Modal para adicionar nova comida -->
+      <!-- <div
+        class="modal fade"
+        id="adicionarModal"
+        tabindex="-1"
+        aria-labelledby="adicionarModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="adicionarModalLabel">
+                Adicionar Nova Comida
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"
+              ></button>
+            </div>
+            <div class="modal-body"> -->
+      <!-- Formulário para inserir dados da nova comida -->
+      <!-- <form id="formNovaComida">
+                <div class="mb-3">
+                  <label for="inputComida" class="form-label"
+                    >Nome da Comida</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputComida"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputNota" class="form-label">Nota (1-10)</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputNota"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputSentimento" class="form-label"
+                    >Sentimento</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputSentimento"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputExplicacao" class="form-label"
+                    >Explicação</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="inputExplicacao"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Adicionar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Adicione o script Bootstrap no final do corpo do seu HTML -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- Adicione o seu script JavaScript personalizado -->
+      <script src="index.js"></script>
     </div>
   </body>
 </html>
