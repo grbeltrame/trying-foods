@@ -32,6 +32,9 @@ h3 {
   height: 50px;
 }
 
+h2 {
+  margin-top: 1rem;
+}
 /* Adicione a cor preta aos rótulos dentro do modal */
 /* .form-label {
   color: #000 !important;
